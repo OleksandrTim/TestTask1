@@ -54,7 +54,7 @@ public class TimeZoneTest {
         String eventStartDateAfterChangingTimeZone = driver.findElement(By.xpath("//span[@id='SEV__status']")).getText();
         System.out.println("New Date:" + eventStartDateAfterChangingTimeZone);
 
-        Assert.assertNotEquals(eventStartDateAfterChangingTimeZone, eventStartTime);
+        Assert.assertNotEquals(eventStartTimeAfterChangingTimeZone, eventStartTime);
 
 
     }
